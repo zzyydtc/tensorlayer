@@ -12,6 +12,7 @@
 [![Documentation Status](https://readthedocs.org/projects/tensorlayer/badge/)](https://tensorlayer.readthedocs.io/)
 [![Build Status](https://travis-ci.org/tensorlayer/tensorlayer.svg?branch=master)](https://travis-ci.org/tensorlayer/tensorlayer)
 [![Downloads](http://pepy.tech/badge/tensorlayer)](http://pepy.tech/project/tensorlayer)
+[![Downloads](https://pepy.tech/badge/tensorlayer/week)](https://pepy.tech/project/tensorlayer/week)
 [![Docker Pulls](https://img.shields.io/docker/pulls/tensorlayer/tensorlayer.svg)](https://hub.docker.com/r/tensorlayer/tensorlayer/)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d6b118784e25435498e7310745adb848)](https://www.codacy.com/app/tensorlayer/tensorlayer)
 
@@ -20,49 +21,36 @@
 <!---  [![Documentation Status](https://readthedocs.org/projects/tensorlayercn/badge/)](https://tensorlayercn.readthedocs.io/)
 <!---  [![PyUP Updates](https://pyup.io/repos/github/tensorlayer/tensorlayer/shield.svg)](https://pyup.io/repos/github/tensorlayer/tensorlayer/) --->
 
-<br/>
-
-<a href="https://join.slack.com/t/tensorlayer/shared_invite/enQtMjUyMjczMzU2Njg4LWI0MWU0MDFkOWY2YjQ4YjVhMzI5M2VlZmE4YTNhNGY1NjZhMzUwMmQ2MTc0YWRjMjQzMjdjMTg2MWQ2ZWJhYzc" target="\_blank">
-	<div align="center">
-		<img src="img/join_slack.png" width="40%"/>
-	</div>
-</a>
-
-<br/>
-
-TensorLayer is a novel TensorFlow-based deep learning and reinforcement learning library designed for researchers and engineers. It provides an extensive collection of customizable neural layers to build complex AI models. TensorLayer is awarded the 2017 Best Open Source Software by the [ACM Multimedia Society](https://twitter.com/ImperialDSI/status/923928895325442049). 
-TensorLayer can also be found at [iHub](https://code.ihub.org.cn/projects/328) and [Gitee](https://gitee.com/organizations/TensorLayer).
+[TensorLayer](https://tensorlayer.readthedocs.io) is a novel TensorFlow-based deep learning and reinforcement learning library designed for researchers and engineers. It provides an extensive collection of customizable neural layers to build advanced AI models quickly, based on this, the community open-sourced mass [tutorials](https://github.com/tensorlayer/tensorlayer/blob/master/examples/reinforcement_learning/README.md) and [applications](https://github.com/tensorlayer). TensorLayer is awarded the 2017 Best Open Source Software by the [ACM Multimedia Society](https://twitter.com/ImperialDSI/status/923928895325442049). 
+This project can also be found at [OpenI](https://git.openi.org.cn/TensorLayer/tensorlayer3.0) and [Gitee](https://gitee.com/organizations/TensorLayer).
 
 # News
 
-🔥📰🔥 Reinforcement Learning Model Zoos: [Low-level APIs for Research](https://github.com/tensorlayer/tensorlayer/tree/master/examples/reinforcement_learning) and [High-level APIs for Production](https://github.com/tensorlayer/RLzoo)
+🔥 [TensorLayerX](https://github.com/tensorlayer/tensorlayerx) is a Unified Deep Learning and Reinforcement Learning Framework for All Hardwares, Backends and OS. The current version supports TensorFlow, Pytorch, MindSpore, PaddlePaddle, OneFlow and Jittor as the backends, allowing users to run the code on different hardware like Nvidia-GPU and Huawei-Ascend.
 
-🔥📰🔥 [Sipeed Maxi-EMC](https://github.com/sipeed/Maix-EMC): Run TensorLayer models on the **low-cost AI chip** (e.g., K210) (Alpha Version)
+🔥 TensorLayer is now in [OpenI](https://git.openi.org.cn/TensorLayer/tensorlayer3.0)
 
-🔥📰🔥 [NNoM](https://github.com/majianjia/nnom): Run TensorLayer quantized models on the **MCU** (e.g., STM32) (Coming Soon)
+🔥 Reinforcement Learning Zoo: [Low-level APIs](https://github.com/tensorlayer/tensorlayer/tree/master/examples/reinforcement_learning) for professional usage, [High-level APIs](https://github.com/tensorlayer/RLzoo) for simple usage, and a corresponding [Springer textbook](http://springer.com/gp/book/9789811540943)
 
+🔥 [Sipeed Maxi-EMC](https://github.com/sipeed/Maix-EMC): Run TensorLayer models on the **low-cost AI chip** (e.g., K210) (Alpha Version)
 
-🔥📰🔥 [Free GPU and Data Storage from SurgicalAI](https://github.com/fangde/FreeGPU): SurgicalAI is sponsoring the TensorLayer Community with Cloud Computing Resources such as Free GPUs and Data Storage.
+<!-- 🔥 [NNoM](https://github.com/majianjia/nnom): Run TensorLayer quantized models on the **MCU** (e.g., STM32) (Coming Soon) -->
 
-# Features
+# Design Features
 
-As deep learning practitioners, we have been looking for a library that can address various development
-purposes. This library is easy to adopt by providing diverse examples, tutorials and pre-trained models.
-Also, it allow users to easily fine-tune TensorFlow; while being suitable for production deployment. TensorLayer aims to satisfy all these purposes. It has three key features:
+TensorLayer is a new deep learning library designed with simplicity, flexibility and high-performance in mind.
 
-- **_Simplicity_** : TensorLayer lifts the low-level dataflow interface of TensorFlow to _high-level_ layers / models. It is very easy to learn through the rich [example codes](https://github.com/tensorlayer/awesome-tensorlayer) contributed by a wide community.
-- **_Flexibility_** : TensorLayer APIs are transparent: it does not mask TensorFlow from users; but leaving massive hooks that help _low-level tuning_ and _deep customization_.
-- **_Zero-cost Abstraction_** : TensorLayer can achieve the _full power_ of TensorFlow. The following table shows the training speeds of [VGG16](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) using TensorLayer and native TensorFlow on a TITAN Xp.
+- ***Simplicity*** : TensorLayer has a high-level layer/model abstraction which is effortless to learn. You can learn how deep learning can benefit your AI tasks in minutes through the massive [examples](https://github.com/tensorlayer/awesome-tensorlayer).
+- ***Flexibility*** : TensorLayer APIs are transparent and flexible, inspired by the emerging PyTorch library. Compared to the Keras abstraction, TensorLayer makes it much easier to build and train complex AI models.
+- ***Zero-cost Abstraction*** : Though simple to use, TensorLayer does not require you to make any compromise in the performance of TensorFlow (Check the following benchmark section for more details).
 
-  |   Mode    |       Lib       | Data Format  | Max GPU Memory Usage(MB) | Max CPU Memory Usage(MB) | Avg CPU Memory Usage(MB) | Runtime (sec) |
-  | :-------: | :-------------: | :----------: | :----------------------: | :----------------------: | :----------------------: | :-----------: |
-  | AutoGraph | TensorFlow 2.0  | channel last |          11833           |           2161           |           2136           |      74       |
-  |           | Tensorlayer 2.0 | channel last |          11833           |           2187           |           2169           |      76       |
-  |   Graph   |      Keras      | channel last |           8677           |           2580           |           2576           |      101      |
-  |   Eager   | TensorFlow 2.0  | channel last |           8723           |           2052           |           2024           |      97       |
-  |           | TensorLayer 2.0 | channel last |           8723           |           2010           |           2007           |      95       |
+TensorLayer stands at a unique spot in the TensorFlow wrappers. Other wrappers like Keras and TFLearn
+hide many powerful features of TensorFlow and provide little support for writing custom AI models. Inspired by PyTorch, TensorLayer APIs are simple, flexible and Pythonic,
+making it easy to learn while being flexible enough to cope with complex AI tasks.
+TensorLayer has a fast-growing community. It has been used by researchers and engineers all over the world, including those from  Peking University,
+Imperial College London, UC Berkeley, Carnegie Mellon University, Stanford University, and companies like Google, Microsoft, Alibaba, Tencent, Xiaomi, and Bloomberg.
 
-
+# Multilingual Documents
 
 TensorLayer has extensive documentation for both beginners and professionals. The documentation is available in
 both English and Chinese.
@@ -74,9 +62,9 @@ both English and Chinese.
 If you want to try the experimental features on the the master branch, you can find the latest document
 [here](https://tensorlayer.readthedocs.io/en/latest/).
 
-# Extensive examples
+# Extensive Examples
 
-You can find a large collection of tutorials, examples and real-world applications using TensorLayer within [examples](examples/) or through the following space:
+You can find a large collection of examples that use TensorLayer in [here](examples/) and the following space:
 
 <a href="https://github.com/tensorlayer/awesome-tensorlayer/blob/master/readme.md" target="\_blank">
 	<div align="center">
@@ -84,7 +72,7 @@ You can find a large collection of tutorials, examples and real-world applicatio
 	</div>
 </a>
 
-# Installing TensorLayer is easy
+# Getting Start
 
 TensorLayer 2.0 relies on TensorFlow, numpy, and others. To use GPUs, CUDA and cuDNN are required.
 
@@ -114,13 +102,11 @@ pip3 install --upgrade tensorlayer[extra]            # only the `extra` dependen
 pip3 install --upgrade tensorlayer[contrib_loggers]  # only the `contrib_loggers` dependencies
 ```
 
-
-<!---
-Alternatively, you can install the latest or development version by directly pulling from github:
+If you are TensorFlow 1.X users, you can use TensorLayer 1.11.0:
 
 ```bash
 # For last stable version of TensorLayer 1.X
-pip3 install --upgrade tensorlayer==1.X
+pip3 install --upgrade tensorlayer==1.11.0
 ```
 
 <!---
@@ -155,25 +141,37 @@ nvidia-docker run -it --rm -p 8888:8888 -p 6006:6006 -e PASSWORD=JUPYTER_NB_PASS
 ```
 --->
 
-# Benchmark
+# Performance Benchmark
 
 The following table shows the training speeds of [VGG16](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) using TensorLayer and native TensorFlow on a TITAN Xp.
 
 |   Mode    |       Lib       |  Data Format  | Max GPU Memory Usage(MB)  |Max CPU Memory Usage(MB) | Avg CPU Memory Usage(MB) | Runtime (sec) |
 | :-------: | :-------------: | :-----------: | :-----------------: | :-----------------: | :-----------------: | :-----------: |
 | AutoGraph | TensorFlow 2.0  | channel last  | 11833 |      2161         |        2136         |      74       |
-|           | Tensorlayer 2.0 | channel last  | 11833 |      2187         |        2169         |      76       |
+|           | TensorLayer 2.0 | channel last  | 11833 |      2187         |        2169         |      76       |
 |   Graph   |      Keras      | channel last  | 8677 |      2580         |        2576         |      101       |
 |   Eager   | TensorFlow 2.0  | channel last  | 8723 |      2052         |        2024         |      97       |
 |           | TensorLayer 2.0 | channel last  | 8723 |      2010         |        2007         |      95       |
 
-# Contribute
+# Getting Involved
 
 Please read the [Contributor Guideline](CONTRIBUTING.md) before submitting your PRs.
 
-# Cite
+We suggest users to report bugs using Github issues. Users can also discuss how to use TensorLayer in the following slack channel.
 
-If you use TensorLayer for any projects, please cite this paper：
+<br/>
+
+<a href="https://join.slack.com/t/tensorlayer/shared_invite/enQtODk1NTQ5NTY1OTM5LTQyMGZhN2UzZDBhM2I3YjYzZDBkNGExYzcyZDNmOGQzNmYzNjc3ZjE3MzhiMjlkMmNiMmM3Nzc4ZDY2YmNkMTY" target="\_blank">
+	<div align="center">
+		<img src="img/join_slack.png" width="40%"/>
+	</div>
+</a>
+
+<br/>
+
+# Citing TensorLayer
+
+If you find TensorLayer useful for your project, please cite the following papers：
 
 ```
 @article{tensorlayer2017,
@@ -183,8 +181,13 @@ If you use TensorLayer for any projects, please cite this paper：
     url     = {http://tensorlayer.org},
     year    = {2017}
 }
+
+@inproceedings{tensorlayer2021,
+  title={Tensorlayer 3.0: A Deep Learning Library Compatible With Multiple Backends},
+  author={Lai, Cheng and Han, Jiarong and Dong, Hao},
+  booktitle={2021 IEEE International Conference on Multimedia \& Expo Workshops (ICMEW)},
+  pages={1--3},
+  year={2021},
+  organization={IEEE}
+}
 ```
-
-# License
-
-TensorLayer is released under the Apache 2.0 license. 

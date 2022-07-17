@@ -6,17 +6,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Determine the version prefix to apply depending on the version name')
 
     parser.add_argument(
-        '--version',
-        type=str,
-        required=True,
-        help='The Package Version to be installed in the container'
+        '--version', type=str, required=True, help='The Package Version to be installed in the container'
     )
 
     parser.add_argument('--debug', help='Print debug information', action='store_true')
 
     args = parser.parse_args()
 
-    # create logger
     logger = logging.getLogger("VERSION_PREFIX_CLI")
 
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')

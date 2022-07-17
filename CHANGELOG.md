@@ -67,7 +67,6 @@ To release a new version, please update the changelog as followed:
 
 <!-- YOU CAN EDIT FROM HERE -->
 
-
 ## [Unreleased]
 
 ### Added
@@ -86,12 +85,131 @@ To release a new version, please update the changelog as followed:
 
 ### Contributors
 
+## [2.2.4] - 2020-12-10
+
+TensorLayer 2.2.4 is a maintenance release.
+
+### Added
+
+### Changed
+
+### Dependencies Update
+
+### Deprecated
+
+### Fixed
+
+- Fix batchnorm(#1104)
+- Fix recurrent(#1106)
+
+### Removed
+
+### Security
+
+### Contributors
+- @zsdonghao
+- @Laicheng0830(#1104)
+- @Thinkre(#1106)
+
+## [2.2.3] - 2020-06-18
+
+TensorLayer 2.2.3 is a maintenance release.
+It contains numerous bug fixes.
+
+### Added
+
+### Changed
+
+### Dependencies Update
+
+### Deprecated
+
+### Fixed
+
+- Fix VGG. (#1078, 1079, 1089)
+- Fix norm layer. (#1080)
+- Fix DeCov2d layer. (#1081)
+- Fix ModelLayer and LayerList doc. (#1083)
+- Fix bug in SAC. (#1085)
+- Fix refactoring: Deduplication. (#1086)
+- Fix maxpool, batchnorm Data format fixed, vgg forward. (#1089)
+- Fix package info. (#1090)
+
+### Removed
+
+### Security
+
+### Contributors
+- @zsdonghao
+- @tiancheng2000 (#1078 #1079 #1080 #1081)
+- @ChrisWu1997 (#1083)
+- @quantumiracle (#1085)
+- @marload (#1086)
+- @Gyx-One (#1089)
+- @Laicheng0830 (#1090)
+
+## [2.2.2] - 2020-04-26
+
+TensorLayer 2.2.2 is a maintenance release.
+
+### Added
+
+- Reinforcement learning(#1065)
+- Mish activation(#1068)
+
+### Changed
+
+### Dependencies Update
+
+### Deprecated
+
+### Fixed
+
+- Fix README.
+- Fix package info.
+
+### Removed
+
+### Security
+
+### Contributors
+
+- @zsdonghao
+- @quantumiracle(1065)
+- @Laicheng0830(#1068)
+
+## [2.2.1] - 2020-01-14
+
+TensorLayer 2.2.1 is a maintenance release.
+It contains numerous bug fixes.
+
+### Added
+
+### Changed
+
+### Dependencies Update
+
+### Deprecated
+
+### Fixed
+
+- Fix README. (#1044)
+- Fix package info. (#1046)
+- Fix build test (Using YAPF 0.29) (#1057)
+
+### Removed
+
+### Security
+
+### Contributors
+
+- @luomai (#1044, #1046, #1057)
 
 ## [2.2.0] - 2019-09-13
 
-TensorLayer 2.2.0 is a maintenance release. 
-It contains numerous API improvement and bug fixes. 
-This release is compatible with TensorFlow 2 RC1. 
+TensorLayer 2.2.0 is a maintenance release.
+It contains numerous API improvement and bug fixes.
+This release is compatible with TensorFlow 2 RC1.
 
 ### Added
 - Support nested layer customization (#PR 1015)
@@ -145,7 +263,7 @@ This release is compatible with TensorFlow 2 RC1.
 - Replace tf.nn.func with tf.nn.func.\_\_name\_\_ in model config. (PR #994)
 - Add Reinforcement learning tutorials. (PR #995)
 - Add RNN layers with simple rnn cell, GRU cell, LSTM cell. (PR #998)
-- Update Seq2seq (#998) 
+- Update Seq2seq (#998)
 - Add Seq2seqLuongAttention model (#998)
 
 ### Fixed
@@ -566,12 +684,16 @@ To many PR for this update, please check [here](https://github.com/tensorlayer/t
 @zsdonghao @luomai @DEKHTIARJonathan
 
 [Unreleased]: https://github.com/tensorlayer/tensorlayer/compare/2.0....master
-[2.2.0]: https://github.com/tensorlayer/tensorlayer/compare/2.2.0...2.2.0
-[2.1.0]: https://github.com/tensorlayer/tensorlayer/compare/2.1.0...2.1.0
-[2.0.2]: https://github.com/tensorlayer/tensorlayer/compare/2.0.2...2.0.2
-[2.0.1]: https://github.com/tensorlayer/tensorlayer/compare/2.0.1...2.0.1
-[2.0.0]: https://github.com/tensorlayer/tensorlayer/compare/2.0.0...2.0.0
-[1.11.1]: https://github.com/tensorlayer/tensorlayer/compare/1.11.0...1.11.0
+[2.2.4]: https://github.com/tensorlayer/tensorlayer/compare/2.2.3...2.2.4
+[2.2.3]: https://github.com/tensorlayer/tensorlayer/compare/2.2.2...2.2.3
+[2.2.2]: https://github.com/tensorlayer/tensorlayer/compare/2.2.1...2.2.2
+[2.2.1]: https://github.com/tensorlayer/tensorlayer/compare/2.2.0...2.2.1
+[2.2.0]: https://github.com/tensorlayer/tensorlayer/compare/2.1.0...2.2.0
+[2.1.0]: https://github.com/tensorlayer/tensorlayer/compare/2.0.2...2.1.0
+[2.0.2]: https://github.com/tensorlayer/tensorlayer/compare/2.0.1...2.0.2
+[2.0.1]: https://github.com/tensorlayer/tensorlayer/compare/2.0.0...2.0.1
+[2.0.0]: https://github.com/tensorlayer/tensorlayer/compare/1.11.1...2.0.0
+[1.11.1]: https://github.com/tensorlayer/tensorlayer/compare/1.11.0...1.11.1
 [1.11.0]: https://github.com/tensorlayer/tensorlayer/compare/1.10.1...1.11.0
 [1.10.1]: https://github.com/tensorlayer/tensorlayer/compare/1.10.0...1.10.1
 [1.10.0]: https://github.com/tensorlayer/tensorlayer/compare/1.9.1...1.10.0
